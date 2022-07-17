@@ -1,0 +1,210 @@
+
+html, body {
+  margin:0px !important;
+  height: 100% !important;
+}
+body {
+  /* background: linear-gradient(198deg, #fea163 0%, #e53600 100%) !important; */
+  overflow: hidden;
+  background: rgb(251,129,63);
+background: radial-gradient(circle, rgba(251,129,63,1) 0%, rgba(252,103,70,1) 100%);
+}
+#__next{
+  height: 100% !important;
+}
+.container-page{
+  max-width: 80%;
+  margin:0 auto;
+  height: 100% !important;
+}
+.header{
+  margin:15px 0;
+  font-size:30px;
+  font-weight: bold;
+  color:white;
+}
+.header #about-page{
+  /* float:right; */
+  font-weight: bold;
+  color:white;
+  
+}
+.header #about-page a {
+  color:white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size:23px;
+}
+.header #logo-page a{
+  color:white;
+  text-decoration: none;
+}
+
+.main{
+  height: 100% !important;
+}
+.main #sheet{
+  background:white;
+  border-radius: 5px 5px 0 0;
+  padding:20px;
+  height: calc(100% - 200px) !important;
+}
+.main #sheet h1{
+  text-align: center;
+  font-size:28px;
+  font-weight:bold;
+}
+.main #_control {
+  background: rgba(253, 253, 253, 0.67);
+  border-radius: 0px 0px 5px 5px;
+  padding:20px 50px;
+}
+.main #_control button {
+  border:none;
+  background:none;
+  outline:none;
+}
+.main #tool-bar {
+  background:white;
+  border-radius: 5px;
+  padding:20px 50px;
+  height: calc(100% - 200px + 66px) !important;
+  position: relative;
+
+}
+.main #tool-bar h1{
+  font-size:25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main #_control div {
+  display: inline-block !important;
+  margin-right:10px;
+}
+.main #_control #button-control {
+  max-width: 100px;
+}
+.main #_control #time-bar{
+  width: calc(100% - 100px);
+  float:right;
+  margin-right:0 !important;
+  display: flex !important;
+}
+.main #_control #time-bar span{
+    flex: 1;
+}
+.main #_control #time-bar #_time_start{
+  max-width: 60px;
+  text-align: left;
+}
+.main #_control #time-bar #_time_end{
+  max-width: 60px;
+  text-align: right;
+}
+.main #_control #time-bar #_progress_bar {
+  width: 100%;
+  position: relative;
+  height: 4px;
+  border: 1px solid #fc6746;
+  margin-top:10px;
+  border-radius: 20px;
+}
+.main #_control #time-bar #_progress_bar::before{
+  content:'';
+  position: absolute;
+  height:5px;
+  width:50px;
+  background: #fc6746;
+  border-radius: 20px 0 0 20px;
+  top:-1px;
+  left:-1px;
+}
+.main #_control #time-bar #_progress_bar i {
+  color: #fc6746;
+  position: absolute;
+  top:-7px;
+  left:45px;
+}
+
+.main #tool-bar #media{
+  width: 100%;
+  margin-top:40px;
+}
+.main #tool-bar #numerator,
+.main #tool-bar #denominator {
+  width: 100%;
+  position: relative;
+}
+.main #tool-bar #numerator input,
+.main #tool-bar #denominator input {
+  width: 100%;
+  padding:10px 15px;
+  border:1px solid #fc6746;
+  border-radius: 5px;
+  margin:10px 0;
+  outline:none;
+}
+.main #tool-bar #numerator span,
+.main #tool-bar #denominator span {
+  position: absolute;
+  top:20px;
+  left:25px;
+  background-color: white;
+  padding:0 5px;
+  transition: .05s all;
+  transform: translateY(-15px);
+  font-size:15px;
+  font-weight: bold;
+  color: #fc6746;
+}
+.main #tick_per_beat {
+  position: relative;
+}
+.main #tick_per_beat input{
+  width: 100%;
+  padding:10px 15px;
+  border:1px solid #fc6746;
+  border-radius: 5px;
+  margin:10px 0;
+  outline:none;
+}
+.main #tick_per_beat span {
+  position: absolute;
+  top:20px;
+  left:25px;
+  background-color: white;
+  padding:0 5px;
+  transition: .05s all;
+  transform: translateY(-15px);
+  font-size:15px;
+  font-weight: bold;
+  color: #fc6746;
+}
+.main #make_sheet #random_note,
+.main #make_sheet #predict_note,
+.main #download #pdf,
+.main #download #midi{
+  width: 100%;
+
+}
+.main #make_sheet #random_note button,
+.main #make_sheet #predict_note button,
+.main #download #pdf button,
+.main #download #midi button
+ {
+  width: 100%;
+  padding:10px;
+  border-radius: 5px;
+  background: rgb(251,129,63);
+  background: radial-gradient(circle, rgba(251,129,63,1) 0%, rgba(252,103,70,1) 100%);
+  color:white;
+  font-weight: bold;
+  border:none;
+  outline: none !important;
+}
+.main #download {
+  position: absolute;
+  width: calc(100% - 100px);
+  bottom:20px;
+}
